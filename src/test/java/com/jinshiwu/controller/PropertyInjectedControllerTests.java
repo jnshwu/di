@@ -3,12 +3,14 @@ package com.jinshiwu.controller;
 import com.jinshiwu.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.stereotype.Controller;
 
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by jinshiwu on 8/13/18.
  */
+@Controller
 public class PropertyInjectedControllerTests {
     private PropertyInjectedController propertyInjectedController;
 
