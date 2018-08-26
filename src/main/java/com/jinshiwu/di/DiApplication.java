@@ -1,4 +1,4 @@
-package com.jinshiwu;
+package com.jinshiwu.di;
 
 import com.jinshiwu.controller.ConstractorInjectedController;
 import com.jinshiwu.controller.MyController;
@@ -7,8 +7,10 @@ import com.jinshiwu.controller.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.jinshiwu"})
 public class DiApplication {
 
 	public static void main(String[] args) {

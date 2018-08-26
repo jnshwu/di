@@ -1,4 +1,4 @@
-package com.jinshiwu.services;
+package com.jinshiwu.di.services;
 
 import org.springframework.stereotype.Component;
 

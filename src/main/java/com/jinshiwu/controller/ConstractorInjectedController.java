@@ -1,6 +1,7 @@
 package com.jinshiwu.controller;
 
-import com.jinshiwu.services.GreetingService;
+import com.jinshiwu.di.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Controller;
 public class ConstractorInjectedController {
     private GreetingService greetingService;
 
-    public ConstractorInjectedController(GreetingService greetingService) {
+    public ConstractorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

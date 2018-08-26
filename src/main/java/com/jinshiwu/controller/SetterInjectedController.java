@@ -1,7 +1,8 @@
 package com.jinshiwu.controller;
 
-import com.jinshiwu.services.GreetingService;
+import com.jinshiwu.di.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -12,7 +13,7 @@ public class SetterInjectedController {
     private GreetingService  greetingService;
 
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
+    public void setGreetingService(@Qualifier("getterGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 

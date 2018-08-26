@@ -1,4 +1,4 @@
-package com.jinshiwu.services;
+package com.jinshiwu.di.services;
 
 /**
  * Created by jinshiwu on 8/13/18.

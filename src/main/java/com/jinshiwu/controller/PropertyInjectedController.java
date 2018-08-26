@@ -1,6 +1,6 @@
 package com.jinshiwu.controller;
 
-import com.jinshiwu.services.GreetingServiceImpl;
+import com.jinshiwu.di.services.GreetingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
